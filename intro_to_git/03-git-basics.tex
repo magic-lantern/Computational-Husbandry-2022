@@ -46,27 +46,39 @@
   \framesubtitle{Objectives:}
   Remote Hosting Options
   \begin{itemize}
-    \item \url{github.com}, \url{bitbucket.com}, and many others.
+    \item \url{github.com}, \url{gitlab.com}, \url{bitbucket.com}, and many others.
     \item Read the end user agreements. 
     \item Public or Private repo: data is stored on a public server.
-    \item In my office is a git server, cbcgit.ucdenver.pvt.  If you want an
-      account on this machine send me an email and I'll set you up.
+    \item You can run remote servers behind firewall
   \end{itemize}
 
   Authentication:
   \begin{itemize}
     \item https
+      \begin{itemize}
+        \item Okay, quick and simple
+        \item May require you provide username/password for each push, fetch
+        \item Not supported if you have 2FA set up
+      \end{itemize}
     \item ssh
+      \begin{itemize}
+        \item Easy to set up
+        \item Better security, works within 2FA
+        \item I like to have a unique public/private key pair for each computer I work on.  If a
+          machine is compromised I can protect all my work by revoking that
+          specific key.
+      \end{itemize}
   \end{itemize}
 
   We will learn the following Git verbs:
   \begin{itemize}
     \item {\tt remote}
     \item {\tt push}
-    %\item {\tt pull}
     \item {\tt clone}
     \item {\tt fetch}
     \item {\tt merge}
+    \item {\tt pull} (this is short-hand for {\tt fetch} and {\tt merge} in one
+      step)
   \end{itemize} 
 \end{frame}
 
