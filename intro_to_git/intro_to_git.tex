@@ -32,37 +32,13 @@
 \renewcommand{\@makefnmark}{\hbox{\textsuperscript{\tiny{\@thefnmark}}}}
 \makeatother
 
-% % set font to Helvetica
-% %\usepackage[T1]{fontenc}
-% %\usepackage[scaled=0.92]{helvet}
-% %\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
-% % \usepackage{fontspec}
-% 
-% \newif\ifuseblack
-% % for black theme, this should be
-% %     \useblacktrue
-% % for the white theme, this should be
-% %     \useblackfalse
-% \useblacktrue
-% 
 \usetheme[pageofpages=of,                    % String used between the current page and the
                                              % total page count.
           bullet=circle,                     % Use circles instead of squares for bullets.
           titleline=true,                    % Show a line below the frame title.
           showdate=true,                     % show the date on the title page
           alternativetitlepage=true,         % Use the fancy title page.
-          %titlepagelogo=./images/culogo, % Logo for the first page.
-          titlepagelogo=./images/CUAnschutz_c_clr, % Logo for the first page.
-          % Logo for the header on first page.
-%          \ifuseblack
-%             headerlogo=./images/pubHealth_tt2_rgb_rv_tp,
-%          \else
-%             headerlogo=./images/csph_biostatistics,    % Logo for white background.
-%          \fi
-          watermark=./images/watermark,               % Watermark used in every page.
-          watermarkheight=50pt,              % Height of the watermark.
-          watermarkheightmult=6              % The watermark image is 6 times bigger
-                                             % than watermarkheight.
+          titlepagelogo=./images/CUAnschutz_c_clr % Logo for the first page.
           ]{UCDenver}
 
 %\ifuseblack
@@ -75,10 +51,10 @@
 % Document info
 % ============================================================================ %
 
-\author{Peter E. DeWitt, Ph.D.\\Seth Russell, M.S.}
-\title[Intro to Git]{Git: Distributed Version Control \\ {\small An
+\author[DeWitt \& Russell (2022)]{Peter E. DeWitt, Ph.D. \& Seth Russell, M.S.}
+\title[Git: An Introduction]{Git: Distributed Version Control \\ {\small An
 Introduction}}
-\institute{Department of Biomedical Informatics}
+\institute[DBMI]{Department of Biomedical Informatics}
 \date{10 November 2022}
 
 % ============================================================================ %
@@ -113,9 +89,20 @@ Introduction}}
     \frametitle{Closing}
     \begin{center}
     Thank you for your time.
+    \end{center}
+    \vspace{0.25in}
 
-    \vspace{1in}
+    \begin{itemize}
+      \item Slides are available from \url{https://github.com/magic-lantern/Computational-Husbandry-2022.git}
+      \item Direct questions:
+        \begin{itemize}
+          \item peter.dewitt@cuanschutz.edu
+          \item seth.russell@cuanschutz.edu
+        \end{itemize}
+    \end{itemize}
 
+    \vspace{0.25in}
+    \begin{center}
     The floor is open for questions and comments.
     \end{center} 
   \end{frame}

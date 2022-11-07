@@ -81,6 +81,13 @@
 
     \item You can work offline.
     \item You can work off VPN.  
+
+    \item Asynchronous
+      \begin{itemize}
+        \item Multiple people can work on file at the same time
+        \item Git can merge non-conflicting changes easily
+        \item Git has tools and methods for resolving conflicts
+      \end{itemize}
   \end{itemize}
 \end{frame}
 
@@ -151,21 +158,22 @@
 \begin{frame}[t]{Different ways to use Git}
   \begin{itemize}
     \item Original command line tools.
-    \item Many graphical user interfaces (GUIs) with verying capabilities.
+    \item Many graphical user interfaces (GUIs) with varying capabilities and
+      other Clients are available.
 
     \item Command line allows you to use {\bf all} Git commands.
     \item GUIs allow for only a subset of Git commands.
 
     \item After install, on Windows, Mac OSx, or Linux, command line will be
       available.
-    \item GUIs, take your pick. \url{http://git-scm.com/downloads/guis} has 12
-      differnt GUIs with different features, OS requirments, \ldots, surely
-      dozens of others exist too.
-    \item RStudio has a built in Git GUI.
+    \item GUIs, take your pick. \url{http://git-scm.com/downloads/guis} has
+      about three doze different clients with different features, OS
+      requirements, \ldots, 
+    \item RStudio has a built in Git Client.
   \end{itemize}
 \end{frame}
 
-\subsection{Intalling Git}
+\subsection{Installing Git}
 \begin{frame}[t]{Git is Free!}
   \begin{itemize}
     \item Linux: install via 
@@ -180,14 +188,24 @@
 \end{frame}
 
 \begin{frame}[t]{Set up}
-  Need to run this once after install.  Done via command line, can be done in
-  {\it some} GUIs.
+  \begin{itemize}
+    \item Need to run this once after install.  Done via command line, can be
+      done in {\it some} GUIs.
 
   {\tt
-    \$ git config --global user.name "Peter DeWitt"
+    \$ git config --global user.name "your name"
 
-    \$ git config --global user.email "peter.dewitt@ucdenver.edu" 
+    \$ git config --global user.email "you@school.edu" 
   } 
+
+    \item Name and email are used in the signature to a commit; we'll know who
+      to blame for a change.
+
+    \item Extra credit/security - you can sign commits with GPG keys to verify
+      the author of the commit.
+
+  \end{itemize}
+
 \end{frame}
 
 \begin{frame}[t]{Getting Help}
